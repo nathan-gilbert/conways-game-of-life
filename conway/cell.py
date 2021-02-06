@@ -16,19 +16,22 @@ class Cell:
     def set_dead(self):
         """
         """
-        pass
+        self.__status = CellStatus.DEAD
 
     def set_alive(self):
         """
         """
-        pass
+        self.__status = CellStatus.ALIVE
 
     def is_alive(self):
         """
         """
-        pass
+        return self.__status == CellStatus.ALIVE
 
     def get_print_character(self):
         """
         """
-        pass
+        if self.__status == CellStatus.ALIVE:
+            return '❃'
+        else:
+            return '.'

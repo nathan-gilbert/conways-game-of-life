@@ -14,7 +14,7 @@ class TestCell(unittest.TestCase):
         c = Cell()
         self.assertEqual(c.get_print_character(), '.')
         c.set_alive()
-        self.assertEqual(c.get_print_character(), '0')
+        self.assertEqual(c.get_print_character(), '❃')
         c.set_dead()
         self.assertEqual(c.get_print_character(), '.')
 
