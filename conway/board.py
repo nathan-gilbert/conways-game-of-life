@@ -12,14 +12,14 @@ class Board:
         self.__grid = [
             [Cell() for _ in range(self.__columns)] for _ in range(self.__rows)
         ]
-        self.__generate_board()
+        self.__init_board()
 
-    def draw_board(self):
+    def __init_board(self):
         """
         """
         pass
 
-    def __generate_board(self):
+    def draw_board(self):
         """
         """
         pass
