@@ -31,7 +31,7 @@ class Cell:
     def get_print_character(self):
         """
         """
-        if self.__status == CellStatus.ALIVE:
+        if self.is_alive():
             return '❃'
         else:
             return '.'
